@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>"PADRE JESÚS GARCÍA"</title>
+  <meta name="description" content="Centro de Educación Técnico-Productiva CETPRO Padre Jesús García">
+  <style>
+    :root{--primary:#0b5cff;--dark:#0b2545;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Arial;line-height:1.5;margin:0;color:#111}
+    header{background:linear-gradient(90deg,rgba(11,94,255,0.95),rgba(11,46,69,0.95));color:#fff;padding:18px 20px}
+    .container{max-width:1100px;margin:0 auto;padding:18px}
+    nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:700;font-size:20px}
+    .nav-links{display:flex;gap:14px}
+    .nav-links a{color:#fff;text-decoration:none;padding:8px}
+    .hero{display:flex;gap:20px;align-items:center;padding:30px 0}
+    .hero .left{flex:1}
+    .hero h1{margin:0;font-size:30px}
+    .cta{display:inline-block;margin-top:12px;padding:10px 16px;background:#fff;color:var(--dark);border-radius:8px;text-decoration:none;font-weight:600}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:20px}
+    .card{background:#fff;border-radius:10px;padding:14px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    section{padding:28px 0}
+    h2{margin:0 0 12px 0;color:var(--dark)}
+    p.lead{color:var(--muted)}
+    .courses li{margin-bottom:8px}
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+    .gallery-grid img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+    footer{background:#f6f7fb;padding:20px;color:#333}
+
+    /* responsive */
+    @media(min-width:900px){
+      .hero{padding:40px 0}
+      .hero h1{font-size:40px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">"PADRE JESÚS GARCÍA"</div>
+        <div class="nav-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#cursos">Cursos</a>
+          <a href="#galeria">Galería</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="left">
+          <h1 id="inicio">Formación técnica para el futuro</h1>
+          <a class="cta" href="#cursos">Ver cursos disponibles</a>
+        </div>
+        <div class="right">
+          <img src="imagen/logo.png" alt="Estudiantes en taller" style="width:210px;border-radius:10px;display:block;object-fit:cover;height:190px">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="nosotros">
+      <h2>Mas sobre el CETPRO</h2>
+      <p class="lead">Somos un centro dedicado a la formación técnico-productiva. Ofrecemos programas cortos y prácticos orientados a la inserción laboral y al emprendimiento.</p>
+      <div class="card-grid" aria-hidden="false">
+        <div class="card">
+          <h3>Visión</h3>
+          <p>Formar profesionales técnicos con valores y capacidad productiva que contribuyan al desarrollo local.</p>
+        </div>
+        <div class="card">
+          <h3>Misión</h3>
+          <p>Brindar educación técnica de calidad, vinculada con empresas y proyectos productivos.</p>
+        </div>
+        <div class="card">
+          <h3>Valores</h3>
+          <p>Responsabilidad, respeto, innovación y trabajo en equipo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cursos">
+      <h2>Cursos y Programas</h2>
+      <p class="lead">Programas con duración variable. Ejemplos:</p>
+      <ul class="courses">
+        <li>Electricidad básica y mantenimiento industrial — 120 horas</li>
+        <li>Instalaciones y mantenimiento de redes CCTV — 90 horas</li>
+        <li>Carpintería y ebanistería — 100 horas</li>
+        <li>Panadería y pastelería — 80 horas</li>
+      </ul>
+    </section>
+
+    <section id="galeria">
+      <h2>Galería</h2>
+      <p class="lead">Imágenes de talleres, prácticas y eventos.</p>
+      <div class="gallery-grid">
+        <img src="images/imagen1.jpg" alt="Taller 1">
+        <img src="images/imagen2.jpg" alt="Estudiantes">
+        <img src="images/imagen3.jpg" alt="Evento">
+        <img src="images/imagen4.jpg" alt="Prácticas">
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p class="lead">Dirección:  — Teléfono: +51 935221242— Email: padrejesusg@gmail.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© <span id="year">2025</span> CETPRO "Padre Jesús García" — Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
